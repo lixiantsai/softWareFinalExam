@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Music";
+}
+
+<h2>Music</h2>
+
+@using (Html.BeginForm("Music", "User", FormMethod.Post))
+{
+    <p>姓名: @Html.TextBox("name") @ViewBag.NameMsg</p>
+    <p>數字: @Html.TextBox("num") @ViewBag.numMsg</p>
+    <p>@ViewBag.Msg</p>
+    <input type="submit" value="送出">
+}
